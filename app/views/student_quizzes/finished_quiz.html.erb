@@ -11,6 +11,6 @@
 Question <%= i %>: <%= label_tag "#{question.id}", question.txt %>
 <%= question.view_completed_question(i,user_answer) %>
 <% i += 1 %>
-    
+
 <% end %>
 <%= link_to "Back", student_quizzes_path(:id => @response_map.reviewer_id) %>
