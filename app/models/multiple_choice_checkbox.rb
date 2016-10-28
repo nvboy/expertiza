@@ -7,4 +7,5 @@ class MultipleChoiceCheckbox < QuizQuestion
 
   def view_completed_question(count, answer)
   end
+  
 end

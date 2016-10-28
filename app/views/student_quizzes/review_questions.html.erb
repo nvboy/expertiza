@@ -42,8 +42,11 @@
       <% end %>
 
       <%questions = questionnaire.questions%>
-      <% questions.each do |question| %>
-        <%= question.view_question_text%>
+      <%questions.each do |question| %>
+
+          <%if question.is_a? Question%>
+              <%=question.view_question_text.html_safe%>
+          <%end%>
 
       <% end %><hr>
   <% end %>
